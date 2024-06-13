@@ -1,5 +1,5 @@
 #!/bin/bash
-PROJECT_DIR="/home/sergiza/Documents/_sdlgz"
+PROJECT_DIR="/home/sergiza/Documents/sdlgz"
 cd "$PROJECT_DIR/build"
 
 cmake "$PROJECT_DIR"        # Configurar el proyecto (genera toda la basura de CMake en /build a partir de CMakeLists.txt)

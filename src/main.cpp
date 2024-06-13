@@ -16,22 +16,34 @@ class Game {
     private:
         const std::string title;
         std::unique_ptr<SDL_Window, decltype(&SDL_DestroyWindow)> window;
+        std::unique_ptr<SDL_Renderer, decltype(&SDL_DestroyRenderer)> renderer;
 };
 Game::Game()    // constructor
-    : title{"Open Window"}, window{nullptr, SDL_DestroyWindow} {}
+    : title{"Open Window"}, window{nullptr, SDL_DestroyWindow}, renderer{nullptr, SDL_DestroyRenderer} {}
 
 void Game::init() {
-    this->window.reset(SDL_CreateWindow(this->title.c_str(), SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, this->width, this->height, 0));
+    this->window.reset(
+            SDL_CreateWindow(this->title.c_str(), SDL_WINDOWPOS_CENTERED,
+                SDL_WINDOWPOS_CENTERED, this->width, this->height, 0));
     if (!this->window) {    // if window is null
         auto error = std::format("Error creating Window: {}", SDL_GetError());
+        throw std::runtime_error(error);
+    }
+
+    this->renderer.reset(
+            SDL_CreateRenderer(this->window.get(), -1, SDL_RENDERER_ACCELERATED));
+    if (!this->renderer) {    // if renderer is null
+        auto error = std::format("Error creating Renderer: {}", SDL_GetError());
         throw std::runtime_error(error);
     }
 }
 
 void Game::run() {
-    SDL_Delay(2000);
+    SDL_Delay(100);
+    SDL_RenderClear(this->renderer.get());
+    SDL_RenderPresent(this->renderer.get());
+    SDL_Delay(5000);
 }
-
 
 void initialize_sdl() {
     if (SDL_Init(SDL_INIT_EVERYTHING)) {
