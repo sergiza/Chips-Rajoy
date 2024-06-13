@@ -1,4 +1,6 @@
 #include <SDL2/SDL.h>
+#include <SDL_events.h>
+#include <SDL_scancode.h>
 #include <format>
 #include <iostream>
 #include <memory>
@@ -15,6 +17,7 @@ class Game {
 
     private:
         const std::string title;
+        SDL_Event event;
         std::unique_ptr<SDL_Window, decltype(&SDL_DestroyWindow)> window;
         std::unique_ptr<SDL_Renderer, decltype(&SDL_DestroyRenderer)> renderer;
 };
@@ -40,9 +43,28 @@ void Game::init() {
 
 void Game::run() {
     SDL_Delay(100);
-    SDL_RenderClear(this->renderer.get());
-    SDL_RenderPresent(this->renderer.get());
-    SDL_Delay(5000);
+    while (true) {
+        while (SDL_PollEvent(&this->event)) {
+            switch (event.type) {
+                case SDL_QUIT:
+                    return;
+                    break;
+                case SDL_KEYDOWN:
+                    switch (event.key.keysym.scancode) {
+                        case SDL_SCANCODE_Q:
+                            return;
+                            break;
+                        default:
+                            break;
+                    }
+                default:
+                    break;
+            }
+        }
+        SDL_RenderClear(this->renderer.get());
+        SDL_RenderPresent(this->renderer.get());
+        SDL_Delay(16); // close to 60 frames/second
+    }
 }
 
 void initialize_sdl() {
