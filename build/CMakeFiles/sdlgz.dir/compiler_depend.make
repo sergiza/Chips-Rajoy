@@ -20,6 +20,7 @@ CMakeFiles/sdlgz.dir/src/main.cpp.o: /home/sergiza/Documents/sdlgz/src/main.cpp 
   /usr/include/SDL2/SDL_haptic.h \
   /usr/include/SDL2/SDL_hidapi.h \
   /usr/include/SDL2/SDL_hints.h \
+  /usr/include/SDL2/SDL_image.h \
   /usr/include/SDL2/SDL_joystick.h \
   /usr/include/SDL2/SDL_keyboard.h \
   /usr/include/SDL2/SDL_keycode.h \
@@ -661,9 +662,7 @@ CMakeFiles/sdlgz.dir/src/main.cpp.o: /home/sergiza/Documents/sdlgz/src/main.cpp 
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/13/include/clzerointrin.h:
-
-/usr/include/SDL2/SDL_keyboard.h:
+/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
 
@@ -857,6 +856,14 @@ CMakeFiles/sdlgz.dir/src/main.cpp.o: /home/sergiza/Documents/sdlgz/src/main.cpp 
 
 /usr/include/c++/13/clocale:
 
+/usr/lib/gcc/x86_64-linux-gnu/13/include/wmmintrin.h:
+
+/usr/include/c++/13/bits/align.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
+
+/usr/include/c++/13/bits/unique_ptr.h:
+
 /usr/include/SDL2/SDL_messagebox.h:
 
 /usr/include/SDL2/SDL_loadso.h:
@@ -871,6 +878,10 @@ CMakeFiles/sdlgz.dir/src/main.cpp.o: /home/sergiza/Documents/sdlgz/src/main.cpp 
 
 /usr/include/c++/13/tr1/legendre_function.tcc:
 
+/usr/lib/gcc/x86_64-linux-gnu/13/include/clzerointrin.h:
+
+/usr/include/SDL2/SDL_keyboard.h:
+
 /usr/include/SDL2/SDL_clipboard.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/wbnoinvdintrin.h:
@@ -882,18 +893,6 @@ CMakeFiles/sdlgz.dir/src/main.cpp.o: /home/sergiza/Documents/sdlgz/src/main.cpp 
 /usr/include/c++/13/bits/stl_uninitialized.h:
 
 /usr/include/c++/13/locale:
-
-/usr/include/c++/13/bits/parse_numbers.h:
-
-/usr/include/c++/13/bits/std_abs.h:
-
-/usr/include/SDL2/SDL_misc.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/avx512vlbwintrin.h:
-
-/usr/include/c++/13/bits/locale_facets.h:
-
-/usr/include/SDL2/SDL.h:
 
 /usr/include/SDL2/SDL_hidapi.h:
 
@@ -945,6 +944,18 @@ CMakeFiles/sdlgz.dir/src/main.cpp.o: /home/sergiza/Documents/sdlgz/src/main.cpp 
 
 /usr/include/stdlib.h:
 
+/usr/lib/gcc/x86_64-linux-gnu/13/include/avx512vlbwintrin.h:
+
+/usr/include/c++/13/bits/locale_facets.h:
+
+/usr/include/SDL2/SDL.h:
+
+/usr/include/c++/13/bits/parse_numbers.h:
+
+/usr/include/c++/13/bits/std_abs.h:
+
+/usr/include/SDL2/SDL_misc.h:
+
 /usr/include/SDL2/SDL_metal.h:
 
 /usr/include/c++/13/bits/cxxabi_forced.h:
@@ -956,6 +967,10 @@ CMakeFiles/sdlgz.dir/src/main.cpp.o: /home/sergiza/Documents/sdlgz/src/main.cpp 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/avx5124fmapsintrin.h:
 
 /usr/include/SDL2/SDL_main.h:
+
+/usr/include/SDL2/SDL_image.h:
+
+/usr/include/alloca.h:
 
 /usr/include/c++/13/concepts:
 
@@ -1025,8 +1040,6 @@ CMakeFiles/sdlgz.dir/src/main.cpp.o: /home/sergiza/Documents/sdlgz/src/main.cpp 
 
 /usr/include/c++/13/bits/stl_raw_storage_iter.h:
 
-/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
-
 /usr/include/c++/13/bits/ios_base.h:
 
 /usr/include/c++/13/bits/postypes.h:
@@ -1057,17 +1070,7 @@ CMakeFiles/sdlgz.dir/src/main.cpp.o: /home/sergiza/Documents/sdlgz/src/main.cpp 
 
 /usr/include/c++/13/bits/basic_string.tcc:
 
-/usr/include/alloca.h:
-
 /usr/include/c++/13/backward/auto_ptr.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/wmmintrin.h:
-
-/usr/include/c++/13/bits/align.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
-
-/usr/include/c++/13/bits/unique_ptr.h:
 
 /usr/include/c++/13/bits/stl_tempbuf.h:
 

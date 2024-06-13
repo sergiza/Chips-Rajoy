@@ -1,6 +1,5 @@
 #include <SDL2/SDL.h>
-#include <SDL_events.h>
-#include <SDL_scancode.h>
+#include <SDL2/SDL_image.h>
 #include <format>
 #include <iostream>
 #include <memory>
@@ -11,6 +10,7 @@ class Game {
 
         void init();
         void run();
+        void load_media();
 
         static constexpr int width{800};
         static constexpr int height{600};
@@ -20,9 +20,10 @@ class Game {
         SDL_Event event;
         std::unique_ptr<SDL_Window, decltype(&SDL_DestroyWindow)> window;
         std::unique_ptr<SDL_Renderer, decltype(&SDL_DestroyRenderer)> renderer;
+        std::unique_ptr<SDL_Texture, decltype(&SDL_DestroyTexture)> background;
 };
 Game::Game()    // constructor
-    : title{"Open Window"}, window{nullptr, SDL_DestroyWindow}, renderer{nullptr, SDL_DestroyRenderer} {}
+    : title{"Open Window"}, window{nullptr, SDL_DestroyWindow}, renderer{nullptr, SDL_DestroyRenderer}, background{nullptr, SDL_DestroyTexture} {}
 
 void Game::init() {
     this->window.reset(
@@ -37,6 +38,14 @@ void Game::init() {
             SDL_CreateRenderer(this->window.get(), -1, SDL_RENDERER_ACCELERATED));
     if (!this->renderer) {    // if renderer is null
         auto error = std::format("Error creating Renderer: {}", SDL_GetError());
+        throw std::runtime_error(error);
+    }
+}
+
+void Game::load_media() {
+    this->background.reset(IMG_LoadTexture(this->renderer.get(), "rsrc/images/background.png"));
+    if (!this->background) {    // if background is null
+        auto error = std::format("Error loading texture: {}", IMG_GetError());
         throw std::runtime_error(error);
     }
 }
@@ -62,6 +71,9 @@ void Game::run() {
             }
         }
         SDL_RenderClear(this->renderer.get());
+
+        SDL_RenderCopy(this->renderer.get(), this->background.get(), nullptr, nullptr);
+
         SDL_RenderPresent(this->renderer.get());
         SDL_Delay(16); // close to 60 frames/second
     }
@@ -72,9 +84,16 @@ void initialize_sdl() {
         auto error = std::format("Error initializing SDL2: {}", SDL_GetError());
         throw std::runtime_error(error);
     }
+
+    int img_flags = IMG_INIT_PNG | IMG_INIT_JPG;
+    if ((IMG_Init(img_flags) & img_flags) != img_flags) {
+        auto error = std::format("Error initializing SDL_image: {}", IMG_GetError());
+        throw std::runtime_error(error);
+    }
 }
 
 void close_sdl() {
+    IMG_Quit();
     SDL_Quit();
 }
 
@@ -86,6 +105,7 @@ int main()
         initialize_sdl();
         Game game;
         game.init();
+        game.load_media();
         game.run();
     } catch (const std::runtime_error &e) {
         std::cerr << e.what() << std::endl;

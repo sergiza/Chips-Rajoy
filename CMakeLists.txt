@@ -1,14 +1,13 @@
 cmake_minimum_required(VERSION 3.14)
-project(sdlgz)
+project(sdlgz VERSION 0.1.0)
 
+# cpp20
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
-find_package(SDL2 REQUIRED)
-include_directories(${SDL2_INCLUDE_DIRS})
+find_package(SDL2 REQUIRED) 
+find_package(SDL2_Image REQUIRED)
 
-add_executable(sdlgz src/main.cpp)
-
-target_compile_features(sdlgz PRIVATE cxx_std_20)
-target_link_libraries(sdlgz ${SDL2_LIBRARIES})
+add_executable(sdlgz src/main.cpp) 
+target_link_libraries(sdlgz SDL2::SDL2main SDL2::SDL2 SDL2_image::SDL2_image)
