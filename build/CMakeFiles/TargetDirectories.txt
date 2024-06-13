@@ -1,0 +1,3 @@
+/home/sergiza/Documents/_sdlgz/build/CMakeFiles/sdlgz.dir
+/home/sergiza/Documents/_sdlgz/build/CMakeFiles/edit_cache.dir
+/home/sergiza/Documents/_sdlgz/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/sergiza/Documents/_sdlgz/build",
+  "command": "/usr/bin/c++  -isystem /usr/include/SDL2 -std=gnu++20 -o CMakeFiles/sdlgz.dir/src/main.cpp.o -c /home/sergiza/Documents/_sdlgz/src/main.cpp",
+  "file": "/home/sergiza/Documents/_sdlgz/src/main.cpp",
+  "output": "CMakeFiles/sdlgz.dir/src/main.cpp.o"
+}
+]
