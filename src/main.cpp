@@ -1,5 +1,6 @@
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
+#include <SDL2/SDL_ttf.h>
 #include <format>
 #include <iostream>
 #include <memory>
@@ -18,12 +19,28 @@ class Game {
     private:
         const std::string title;
         SDL_Event event;
+        int font_size;
+        SDL_Color font_color;
+        std::string text_str;
+        SDL_Rect text_rect;
+
         std::unique_ptr<SDL_Window, decltype(&SDL_DestroyWindow)> window;
         std::unique_ptr<SDL_Renderer, decltype(&SDL_DestroyRenderer)> renderer;
         std::unique_ptr<SDL_Texture, decltype(&SDL_DestroyTexture)> background;
+        std::unique_ptr<TTF_Font, decltype(&TTF_CloseFont)> font;
+        std::unique_ptr<SDL_Surface, decltype(&SDL_FreeSurface)> text_surf;
+        std::unique_ptr<SDL_Texture, decltype(&SDL_DestroyTexture)> text;
 };
 Game::Game()    // constructor
-    : title{"Open Window"}, window{nullptr, SDL_DestroyWindow}, renderer{nullptr, SDL_DestroyRenderer}, background{nullptr, SDL_DestroyTexture} {}
+    : title{"sdlgz"},
+        font_size{80}, font_color{255, 255, 255, 255},
+        text_str{"SDL"}, text_rect{0, 0, 0, 0},
+        window{nullptr, SDL_DestroyWindow},
+        renderer{nullptr, SDL_DestroyRenderer},
+        background{nullptr, SDL_DestroyTexture},
+        font{nullptr, TTF_CloseFont},
+        text_surf(nullptr, SDL_FreeSurface),
+        text{nullptr, SDL_DestroyTexture} {}
 
 void Game::init() {
     this->window.reset(
@@ -46,6 +63,27 @@ void Game::load_media() {
     this->background.reset(IMG_LoadTexture(this->renderer.get(), "rsrc/images/background.png"));
     if (!this->background) {    // if background is null
         auto error = std::format("Error loading texture: {}", IMG_GetError());
+        throw std::runtime_error(error);
+    }
+
+    this->font.reset(TTF_OpenFont("rsrc/fonts/freesansbold.ttf", this->font_size));
+    if (!this->font) {    // if font is null
+        auto error = std::format("Error creating Font: {}", TTF_GetError());
+        throw std::runtime_error(error);
+    }
+
+    this->text_surf.reset(TTF_RenderText_Blended(this->font.get(), this->text_str.c_str(), this->font_color));
+    if (!this->text_surf) {    // if surface is null
+        auto error = std::format("Error loading text Surface: {}", TTF_GetError());
+        throw std::runtime_error(error);
+    }
+
+    this->text_rect.w = this->text_surf->w;
+    this->text_rect.h = this->text_surf->h;
+
+    this->text.reset(SDL_CreateTextureFromSurface(this->renderer.get(), this->text_surf.get()));
+    if (!this->text) {    // if text is null
+        auto error = std::format("Error creating Texture from Surface: {}", SDL_GetError());
         throw std::runtime_error(error);
     }
 }
@@ -74,6 +112,8 @@ void Game::run() {
 
         SDL_RenderCopy(this->renderer.get(), this->background.get(), nullptr, nullptr);
 
+        SDL_RenderCopy(this->renderer.get(), this->text.get(), nullptr, &this->text_rect);
+
         SDL_RenderPresent(this->renderer.get());
         SDL_Delay(16); // close to 60 frames/second
     }
@@ -90,9 +130,15 @@ void initialize_sdl() {
         auto error = std::format("Error initializing SDL_image: {}", IMG_GetError());
         throw std::runtime_error(error);
     }
+
+    if (TTF_Init()) {
+        auto error = std::format("Error initializing SDL_ttf: {}", TTF_GetError());
+        throw std::runtime_error(error);
+    }
 }
 
 void close_sdl() {
+    TTF_Quit();
     IMG_Quit();
     SDL_Quit();
 }

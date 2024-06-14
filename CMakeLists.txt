@@ -8,6 +8,7 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 find_package(SDL2 REQUIRED) 
 find_package(SDL2_Image REQUIRED)
+find_package(SDL2_ttf REQUIRED)
 
 add_executable(sdlgz src/main.cpp) 
-target_link_libraries(sdlgz SDL2::SDL2main SDL2::SDL2 SDL2_image::SDL2_image)
+target_link_libraries(sdlgz SDL2::SDL2main SDL2::SDL2 SDL2_image::SDL2_image SDL2_ttf::SDL2_ttf)

@@ -49,6 +49,7 @@ CMakeFiles/sdlgz.dir/src/main.cpp.o: /home/sergiza/Documents/sdlgz/src/main.cpp 
   /usr/include/SDL2/SDL_thread.h \
   /usr/include/SDL2/SDL_timer.h \
   /usr/include/SDL2/SDL_touch.h \
+  /usr/include/SDL2/SDL_ttf.h \
   /usr/include/SDL2/SDL_version.h \
   /usr/include/SDL2/SDL_video.h \
   /usr/include/SDL2/begin_code.h \
@@ -664,13 +665,7 @@ CMakeFiles/sdlgz.dir/src/main.cpp.o: /home/sergiza/Documents/sdlgz/src/main.cpp 
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
-
-/usr/include/asm-generic/errno.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/avx512vbmi2vlintrin.h:
-
-/usr/include/syscall.h:
+/usr/include/x86_64-linux-gnu/bits/math-vector.h:
 
 /usr/include/c++/13/bits/shared_ptr_atomic.h:
 
@@ -683,14 +678,6 @@ CMakeFiles/sdlgz.dir/src/main.cpp.o: /home/sergiza/Documents/sdlgz/src/main.cpp 
 /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h:
 
 /usr/include/c++/13/bits/ranges_util.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/serializeintrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/avx512vp2intersectvlintrin.h:
-
-/usr/include/c++/13/bits/stl_iterator_base_funcs.h:
-
-/usr/include/asm-generic/errno-base.h:
 
 /usr/include/c++/13/bits/ranges_cmp.h:
 
@@ -709,10 +696,6 @@ CMakeFiles/sdlgz.dir/src/main.cpp.o: /home/sergiza/Documents/sdlgz/src/main.cpp 
 /usr/include/c++/13/bits/std_mutex.h:
 
 /usr/include/c++/13/bits/stl_construct.h:
-
-/usr/include/c++/13/bits/ptr_traits.h:
-
-/usr/include/c++/13/bits/ranges_uninitialized.h:
 
 /usr/include/c++/13/bits/ostream_insert.h:
 
@@ -864,6 +847,18 @@ CMakeFiles/sdlgz.dir/src/main.cpp.o: /home/sergiza/Documents/sdlgz/src/main.cpp 
 
 /usr/include/c++/13/bits/unique_ptr.h:
 
+/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
+
+/usr/include/c++/13/bits/charconv.h:
+
+/usr/include/c++/13/cstdio:
+
+/usr/include/c++/13/bits/allocated_ptr.h:
+
+/usr/include/c++/13/bit:
+
+/usr/include/c++/13/bits/basic_string.tcc:
+
 /usr/include/SDL2/SDL_messagebox.h:
 
 /usr/include/SDL2/SDL_loadso.h:
@@ -994,7 +989,13 @@ CMakeFiles/sdlgz.dir/src/main.cpp.o: /home/sergiza/Documents/sdlgz/src/main.cpp 
 
 /usr/include/c++/13/bits/hash_bytes.h:
 
-/usr/include/x86_64-linux-gnu/bits/math-vector.h:
+/usr/include/c++/13/bits/ptr_traits.h:
+
+/usr/include/c++/13/bits/ranges_uninitialized.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
+
+/usr/include/c++/13/climits:
 
 /usr/include/SDL2/SDL_filesystem.h:
 
@@ -1058,17 +1059,21 @@ CMakeFiles/sdlgz.dir/src/main.cpp.o: /home/sergiza/Documents/sdlgz/src/main.cpp 
 
 /usr/include/c++/13/array:
 
-/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
+/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
 
-/usr/include/c++/13/bits/charconv.h:
+/usr/include/asm-generic/errno.h:
 
-/usr/include/c++/13/cstdio:
+/usr/lib/gcc/x86_64-linux-gnu/13/include/serializeintrin.h:
 
-/usr/include/c++/13/bits/allocated_ptr.h:
+/usr/lib/gcc/x86_64-linux-gnu/13/include/avx512vp2intersectvlintrin.h:
 
-/usr/include/c++/13/bit:
+/usr/include/asm-generic/errno-base.h:
 
-/usr/include/c++/13/bits/basic_string.tcc:
+/usr/include/c++/13/bits/stl_iterator_base_funcs.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/avx512vbmi2vlintrin.h:
+
+/usr/include/syscall.h:
 
 /usr/include/c++/13/backward/auto_ptr.h:
 
@@ -1101,10 +1106,6 @@ CMakeFiles/sdlgz.dir/src/main.cpp.o: /home/sergiza/Documents/sdlgz/src/main.cpp 
 /usr/include/c++/13/backward/binders.h:
 
 /usr/include/c++/13/charconv:
-
-/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
-
-/usr/include/c++/13/climits:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/cetintrin.h:
 
@@ -1145,6 +1146,8 @@ CMakeFiles/sdlgz.dir/src/main.cpp.o: /home/sergiza/Documents/sdlgz/src/main.cpp 
 /usr/include/c++/13/ext/alloc_traits.h:
 
 /usr/include/c++/13/new:
+
+/usr/include/SDL2/SDL_ttf.h:
 
 /usr/include/inttypes.h:
 

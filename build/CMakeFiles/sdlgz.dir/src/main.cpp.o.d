@@ -231,8 +231,9 @@ CMakeFiles/sdlgz.dir/src/main.cpp.o: \
  /usr/include/SDL2/SDL_system.h /usr/include/SDL2/SDL_timer.h \
  /usr/include/SDL2/SDL_version.h /usr/include/SDL2/SDL_locale.h \
  /usr/include/SDL2/SDL_misc.h /usr/include/SDL2/SDL_image.h \
- /usr/include/SDL2/SDL.h /usr/include/c++/13/format \
- /usr/include/c++/13/array /usr/include/c++/13/initializer_list \
+ /usr/include/SDL2/SDL.h /usr/include/SDL2/SDL_ttf.h \
+ /usr/include/c++/13/format /usr/include/c++/13/array \
+ /usr/include/c++/13/initializer_list \
  /usr/include/c++/13/bits/range_access.h /usr/include/c++/13/charconv \
  /usr/include/c++/13/bits/charconv.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h \
