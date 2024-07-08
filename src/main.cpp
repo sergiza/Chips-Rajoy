@@ -17,12 +17,17 @@ class Game {
         static constexpr int height{600};
 
     private:
+        void update_text();
+
         const std::string title;
         SDL_Event event;
         int font_size;
         SDL_Color font_color;
         std::string text_str;
         SDL_Rect text_rect;
+        const int text_vel;
+        int text_xvel;
+        int text_yvel;
 
         std::unique_ptr<SDL_Window, decltype(&SDL_DestroyWindow)> window;
         std::unique_ptr<SDL_Renderer, decltype(&SDL_DestroyRenderer)> renderer;
@@ -35,6 +40,7 @@ Game::Game()    // constructor
     : title{"sdlgz"},
         font_size{80}, font_color{255, 255, 255, 255},
         text_str{"SDL"}, text_rect{0, 0, 0, 0},
+        text_vel{3}, text_xvel{3}, text_yvel{3},
         window{nullptr, SDL_DestroyWindow},
         renderer{nullptr, SDL_DestroyRenderer},
         background{nullptr, SDL_DestroyTexture},
@@ -88,6 +94,22 @@ void Game::load_media() {
     }
 }
 
+void Game::update_text() {
+    this->text_rect.x += this->text_xvel;
+    this->text_rect.y += this->text_yvel;
+
+    if (this->text_rect.x < 0) {
+        this->text_xvel = this->text_vel;
+    } else if (this->text_rect.x + this->text_rect.w > this->width) {
+        this->text_xvel = -this->text_vel;
+    }
+    if (this->text_rect.y < 0) {
+        this->text_yvel = this->text_vel;
+    } else if (this->text_rect.y + this->text_rect.h > this->height) {
+        this->text_yvel = -this->text_vel;
+    }
+}
+
 void Game::run() {
     SDL_Delay(100);
     while (true) {
@@ -108,6 +130,9 @@ void Game::run() {
                     break;
             }
         }
+
+        this->update_text();
+
         SDL_RenderClear(this->renderer.get());
 
         SDL_RenderCopy(this->renderer.get(), this->background.get(), nullptr, nullptr);
