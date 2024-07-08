@@ -1,5 +1,5 @@
-CMakeFiles/sdlgz.dir/src/main.cpp.o: \
- /home/sergiza/Documents/sdlgz/src/main.cpp /usr/include/stdc-predef.h \
+CMakeFiles/sdlgz.dir/src/Game.cpp.o: \
+ /home/sergiza/Documents/sdlgz/src/Game.cpp /usr/include/stdc-predef.h \
  /home/sergiza/Documents/sdlgz/src/Game.h /usr/include/SDL2/SDL.h \
  /usr/include/SDL2/SDL_main.h /usr/include/SDL2/SDL_stdinc.h \
  /usr/include/SDL2/SDL_config.h \

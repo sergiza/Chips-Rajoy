@@ -24,8 +24,7 @@ void close_sdl() {
     SDL_Quit();
 }
 
-int main()
-{
+int main() {
     int exit = EXIT_SUCCESS;
 
     try {

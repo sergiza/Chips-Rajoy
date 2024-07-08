@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/sdlgz.dir/src/Game.cpp.o"
+  "CMakeFiles/sdlgz.dir/src/Game.cpp.o.d"
   "CMakeFiles/sdlgz.dir/src/main.cpp.o"
   "CMakeFiles/sdlgz.dir/src/main.cpp.o.d"
   "sdlgz"
