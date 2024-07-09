@@ -5,7 +5,8 @@ Game::Game()    // constructor
       icon{nullptr, SDL_FreeSurface},
       background{nullptr, SDL_DestroyTexture},
       DVDtext_Surface(nullptr, SDL_FreeSurface),
-      DVDtext_Texture{nullptr, SDL_DestroyTexture} {}
+      DVDtext_Texture{nullptr, SDL_DestroyTexture},
+      icon_Texture{nullptr, SDL_DestroyTexture} {}
 
 void Game::init() {
     graphics.init(window_width, window_height, title);
@@ -22,6 +23,10 @@ void Game::load_media() {
 
     icon.reset(graphics.load_surface("rsrc/images/Cpp-logo.png"));
     SDL_SetWindowIcon(graphics.get_window(), icon.get());
+
+    playerSprite.playerSprite_rectangle.w = icon->w;
+    playerSprite.playerSprite_rectangle.h = icon->h;
+    icon_Texture.reset(graphics.texture_from_surface(icon.get()));
 }
 
 
@@ -51,6 +56,7 @@ void Game::run() {
         SDL_RenderClear(graphics.get_renderer());
         SDL_RenderCopy(graphics.get_renderer(), background.get(), nullptr, nullptr);
         SDL_RenderCopy(graphics.get_renderer(), DVDtext_Texture.get(), nullptr, &dvd.text_rectangle);
+        SDL_RenderCopy(graphics.get_renderer(), icon_Texture.get(), nullptr, &playerSprite.playerSprite_rectangle);
         SDL_RenderPresent(graphics.get_renderer());
 
         SDL_Delay(16); // close to 60 frames/second

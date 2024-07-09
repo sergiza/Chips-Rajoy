@@ -225,6 +225,54 @@ src/Graphics.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdlgz.dir/build.make CMakeFiles/sdlgz.dir/src/Graphics.cpp.s
 .PHONY : src/Graphics.cpp.s
 
+src/PlayerSprite.o: src/PlayerSprite.cpp.o
+.PHONY : src/PlayerSprite.o
+
+# target to build an object file
+src/PlayerSprite.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdlgz.dir/build.make CMakeFiles/sdlgz.dir/src/PlayerSprite.cpp.o
+.PHONY : src/PlayerSprite.cpp.o
+
+src/PlayerSprite.i: src/PlayerSprite.cpp.i
+.PHONY : src/PlayerSprite.i
+
+# target to preprocess a source file
+src/PlayerSprite.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdlgz.dir/build.make CMakeFiles/sdlgz.dir/src/PlayerSprite.cpp.i
+.PHONY : src/PlayerSprite.cpp.i
+
+src/PlayerSprite.s: src/PlayerSprite.cpp.s
+.PHONY : src/PlayerSprite.s
+
+# target to generate assembly for a file
+src/PlayerSprite.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdlgz.dir/build.make CMakeFiles/sdlgz.dir/src/PlayerSprite.cpp.s
+.PHONY : src/PlayerSprite.cpp.s
+
+src/Sound.o: src/Sound.cpp.o
+.PHONY : src/Sound.o
+
+# target to build an object file
+src/Sound.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdlgz.dir/build.make CMakeFiles/sdlgz.dir/src/Sound.cpp.o
+.PHONY : src/Sound.cpp.o
+
+src/Sound.i: src/Sound.cpp.i
+.PHONY : src/Sound.i
+
+# target to preprocess a source file
+src/Sound.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdlgz.dir/build.make CMakeFiles/sdlgz.dir/src/Sound.cpp.i
+.PHONY : src/Sound.cpp.i
+
+src/Sound.s: src/Sound.cpp.s
+.PHONY : src/Sound.s
+
+# target to generate assembly for a file
+src/Sound.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdlgz.dir/build.make CMakeFiles/sdlgz.dir/src/Sound.cpp.s
+.PHONY : src/Sound.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -270,6 +318,12 @@ help:
 	@echo "... src/Graphics.o"
 	@echo "... src/Graphics.i"
 	@echo "... src/Graphics.s"
+	@echo "... src/PlayerSprite.o"
+	@echo "... src/PlayerSprite.i"
+	@echo "... src/PlayerSprite.s"
+	@echo "... src/Sound.o"
+	@echo "... src/Sound.i"
+	@echo "... src/Sound.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

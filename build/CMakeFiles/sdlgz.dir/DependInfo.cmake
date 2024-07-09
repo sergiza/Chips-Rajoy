@@ -12,6 +12,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/sergiza/Documents/sdlgz/src/Fonts.cpp" "CMakeFiles/sdlgz.dir/src/Fonts.cpp.o" "gcc" "CMakeFiles/sdlgz.dir/src/Fonts.cpp.o.d"
   "/home/sergiza/Documents/sdlgz/src/Game.cpp" "CMakeFiles/sdlgz.dir/src/Game.cpp.o" "gcc" "CMakeFiles/sdlgz.dir/src/Game.cpp.o.d"
   "/home/sergiza/Documents/sdlgz/src/Graphics.cpp" "CMakeFiles/sdlgz.dir/src/Graphics.cpp.o" "gcc" "CMakeFiles/sdlgz.dir/src/Graphics.cpp.o.d"
+  "/home/sergiza/Documents/sdlgz/src/PlayerSprite.cpp" "CMakeFiles/sdlgz.dir/src/PlayerSprite.cpp.o" "gcc" "CMakeFiles/sdlgz.dir/src/PlayerSprite.cpp.o.d"
+  "/home/sergiza/Documents/sdlgz/src/Sound.cpp" "CMakeFiles/sdlgz.dir/src/Sound.cpp.o" "gcc" "CMakeFiles/sdlgz.dir/src/Sound.cpp.o.d"
   "/home/sergiza/Documents/sdlgz/src/main.cpp" "CMakeFiles/sdlgz.dir/src/main.cpp.o" "gcc" "CMakeFiles/sdlgz.dir/src/main.cpp.o.d"
   )
 

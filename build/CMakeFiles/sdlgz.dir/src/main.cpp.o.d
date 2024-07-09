@@ -357,5 +357,6 @@ CMakeFiles/sdlgz.dir/src/main.cpp.o: \
  /usr/include/c++/13/pstl/execution_defs.h \
  /home/sergiza/Documents/sdlgz/src/Fonts.h /usr/include/SDL2/SDL_image.h \
  /usr/include/SDL2/SDL_ttf.h /home/sergiza/Documents/sdlgz/src/DVD.h \
+ /home/sergiza/Documents/sdlgz/src/PlayerSprite.h \
  /usr/include/c++/13/iostream /usr/include/c++/13/istream \
  /usr/include/c++/13/bits/istream.tcc
