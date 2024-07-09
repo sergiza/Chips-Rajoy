@@ -129,6 +129,30 @@ sdlgz/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdlgz.dir/build.make CMakeFiles/sdlgz.dir/build
 .PHONY : sdlgz/fast
 
+src/Fonts.o: src/Fonts.cpp.o
+.PHONY : src/Fonts.o
+
+# target to build an object file
+src/Fonts.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdlgz.dir/build.make CMakeFiles/sdlgz.dir/src/Fonts.cpp.o
+.PHONY : src/Fonts.cpp.o
+
+src/Fonts.i: src/Fonts.cpp.i
+.PHONY : src/Fonts.i
+
+# target to preprocess a source file
+src/Fonts.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdlgz.dir/build.make CMakeFiles/sdlgz.dir/src/Fonts.cpp.i
+.PHONY : src/Fonts.cpp.i
+
+src/Fonts.s: src/Fonts.cpp.s
+.PHONY : src/Fonts.s
+
+# target to generate assembly for a file
+src/Fonts.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdlgz.dir/build.make CMakeFiles/sdlgz.dir/src/Fonts.cpp.s
+.PHONY : src/Fonts.cpp.s
+
 src/Game.o: src/Game.cpp.o
 .PHONY : src/Game.o
 
@@ -210,6 +234,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... sdlgz"
+	@echo "... src/Fonts.o"
+	@echo "... src/Fonts.i"
+	@echo "... src/Fonts.s"
 	@echo "... src/Game.o"
 	@echo "... src/Game.i"
 	@echo "... src/Game.s"

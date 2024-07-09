@@ -354,6 +354,7 @@ CMakeFiles/sdlgz.dir/src/main.cpp.o: \
  /usr/include/c++/13/backward/auto_ptr.h \
  /usr/include/c++/13/bits/ranges_uninitialized.h \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
- /usr/include/c++/13/pstl/execution_defs.h /usr/include/SDL2/SDL_ttf.h \
- /usr/include/c++/13/iostream /usr/include/c++/13/istream \
- /usr/include/c++/13/bits/istream.tcc
+ /usr/include/c++/13/pstl/execution_defs.h \
+ /home/sergiza/Documents/sdlgz/src/Fonts.h /usr/include/SDL2/SDL_image.h \
+ /usr/include/SDL2/SDL_ttf.h /usr/include/c++/13/iostream \
+ /usr/include/c++/13/istream /usr/include/c++/13/bits/istream.tcc

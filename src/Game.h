@@ -2,9 +2,9 @@
 #define GAME_H
 
 #include "Graphics.h"
+#include "Fonts.h"
 
 #include <SDL2/SDL.h>
-#include <SDL2/SDL_ttf.h>
 #include <format>
 #include <iostream>
 #include <memory>
@@ -12,24 +12,21 @@
 class Game {
     public:
         Game();
-
-        static constexpr int width{800};
-        static constexpr int height{600};
-
-        Graphics graphics;
+        static constexpr int window_width{800};
+        static constexpr int window_height{600};
+        const std::string title;
 
         void init();
         void run();
         void load_media();
 
-
     private:
+        Graphics graphics;
+        Fonts fonts;
+        SDL_Event event;
+
         void update_text();
 
-        const std::string title;
-        SDL_Event event;
-        int font_size;
-        SDL_Color font_color;
         std::string text_str;
         SDL_Rect text_rect;
         const int text_vel;
@@ -37,8 +34,7 @@ class Game {
         int text_yvel;
 
         std::unique_ptr<SDL_Texture, decltype(&SDL_DestroyTexture)> background;
-        std::unique_ptr<TTF_Font, decltype(&TTF_CloseFont)> font;
-        std::unique_ptr<SDL_Surface, decltype(&SDL_FreeSurface)> text_surf;
+        std::unique_ptr<SDL_Surface, decltype(&SDL_FreeSurface)> Surface_DVDtext;
         std::unique_ptr<SDL_Texture, decltype(&SDL_DestroyTexture)> text;
 };
 

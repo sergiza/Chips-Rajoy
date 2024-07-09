@@ -2,39 +2,31 @@
 
 Game::Game()    // constructor
     : title{"sdlgz"},
-      font_size{80},
-      font_color{255, 255, 255, 255},
-      text_str{"SDL"},
+      text_str{"DVD"},
       text_rect{0, 0, 0, 0},
       text_vel{3}, text_xvel{3}, text_yvel{3},
       background{nullptr, SDL_DestroyTexture},
-      font{nullptr, TTF_CloseFont},
-      text_surf(nullptr, SDL_FreeSurface),
+      Surface_DVDtext(nullptr, SDL_FreeSurface),
       text{nullptr, SDL_DestroyTexture} {}
 
 void Game::init() {
-    graphics.init(width, height, title);
+    graphics.init(window_width, window_height, title);
+    fonts.init();
 }
 
 void Game::load_media() {
-    background.reset(graphics.load_texture("rsrc/images/background.png"));
+    background.reset(graphics.load_texture("rsrc/images/adibu.jpg"));
 
-    font.reset(TTF_OpenFont("rsrc/fonts/freesansbold.ttf", font_size));
-    if (!font) {    // if font is null
-        auto error = std::format("Error creating Font: {}", TTF_GetError());
-        throw std::runtime_error(error);
-    }
-
-    text_surf.reset(TTF_RenderText_Blended(font.get(), text_str.c_str(), font_color));
-    if (!text_surf) {    // if surface is null
+    Surface_DVDtext.reset(TTF_RenderText_Blended(fonts.font.get(), text_str.c_str(), fonts.font_color));
+    if (!Surface_DVDtext) {    // if surface is null
         auto error = std::format("Error loading text Surface: {}", TTF_GetError());
         throw std::runtime_error(error);
     }
 
-    text_rect.w = text_surf->w;
-    text_rect.h = text_surf->h;
+    text_rect.w = Surface_DVDtext->w;
+    text_rect.h = Surface_DVDtext->h;
 
-    text.reset(SDL_CreateTextureFromSurface(graphics.get_renderer(), text_surf.get()));
+    text.reset(SDL_CreateTextureFromSurface(graphics.get_renderer(), Surface_DVDtext.get()));
     if (!text) {    // if text is null
         auto error = std::format("Error creating Texture from Surface: {}", SDL_GetError());
         throw std::runtime_error(error);
@@ -47,12 +39,12 @@ void Game::update_text() {
 
     if (text_rect.x < 0) {
         text_xvel = text_vel;
-    } else if (text_rect.x + text_rect.w > width) {
+    } else if (text_rect.x + text_rect.w > window_width) {
         text_xvel = -text_vel;
     }
     if (text_rect.y < 0) {
         text_yvel = text_vel;
-    } else if (text_rect.y + text_rect.h > height) {
+    } else if (text_rect.y + text_rect.h > window_height) {
         text_yvel = -text_vel;
     }
 }
