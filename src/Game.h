@@ -29,9 +29,10 @@ class Game {
         SDL_Event event;
         DVD dvd;
 
+        std::unique_ptr<SDL_Surface, decltype(&SDL_FreeSurface)> icon;
         std::unique_ptr<SDL_Texture, decltype(&SDL_DestroyTexture)> background;
-        std::unique_ptr<SDL_Surface, decltype(&SDL_FreeSurface)> Surface_DVDtext;
-        std::unique_ptr<SDL_Texture, decltype(&SDL_DestroyTexture)> Texture_DVDtext;
+        std::unique_ptr<SDL_Surface, decltype(&SDL_FreeSurface)> DVDtext_Surface;
+        std::unique_ptr<SDL_Texture, decltype(&SDL_DestroyTexture)> DVDtext_Texture;
 
 };
 

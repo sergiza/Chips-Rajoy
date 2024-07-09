@@ -12,7 +12,9 @@ class Graphics{
         Graphics();
         void init(int width, int height, std::string title);
         SDL_Renderer* get_renderer();
+        SDL_Window* get_window();
         SDL_Texture* load_texture(const std::string& file_path);
+        SDL_Surface* load_surface(const std::string& file_path);
         SDL_Texture* texture_from_surface(SDL_Surface* surface);
 
     private:

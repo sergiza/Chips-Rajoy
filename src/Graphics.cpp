@@ -25,6 +25,10 @@ SDL_Renderer* Graphics::get_renderer() {
     return renderer.get();
 }
 
+SDL_Window* Graphics::get_window() {
+    return window.get();
+}
+
 SDL_Texture* Graphics::texture_from_surface(SDL_Surface* surface) {
     SDL_Texture* texture = SDL_CreateTextureFromSurface(get_renderer(), surface);
     if (!texture) {    // if text is null
@@ -41,3 +45,13 @@ SDL_Texture* Graphics::load_texture(const std::string& file_path) {
     }
     return texture;
 }
+
+
+SDL_Surface* Graphics::load_surface(const std::string& file_path) {
+    SDL_Surface* surface = IMG_Load(file_path.c_str());
+    if (!surface) {
+        throw std::runtime_error(std::format("Error loading surface: {}", IMG_GetError()));
+    }
+    return surface;
+}
+
