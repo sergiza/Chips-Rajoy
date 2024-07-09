@@ -8,12 +8,13 @@
 
 
 class Graphics{
-   public:
-       Graphics();
-       void init(int width, int height, std::string title);
-       SDL_Renderer* get_renderer();
+    public:
+        Graphics();
+        void init(int width, int height, std::string title);
+        SDL_Renderer* get_renderer();
+        SDL_Texture* load_texture(const std::string& file_path);
 
-   private:
+    private:
         std::unique_ptr<SDL_Window, decltype(&SDL_DestroyWindow)> window;
         std::unique_ptr<SDL_Renderer, decltype(&SDL_DestroyRenderer)> renderer;
 };

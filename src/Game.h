@@ -13,14 +13,15 @@ class Game {
     public:
         Game();
 
-        void init();
-        void run();
-        void load_media();
-
         static constexpr int width{800};
         static constexpr int height{600};
 
         Graphics graphics;
+
+        void init();
+        void run();
+        void load_media();
+
 
     private:
         void update_text();

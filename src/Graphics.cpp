@@ -21,6 +21,14 @@ void Graphics::init(int width, int height, std::string title) {
     }
 }
 
-SDL_Renderer* Graphics::get_renderer() { // const?
+SDL_Renderer* Graphics::get_renderer() {
     return renderer.get();
+}
+
+SDL_Texture* Graphics::load_texture(const std::string& file_path) {
+    SDL_Texture* texture = IMG_LoadTexture(renderer.get(), file_path.c_str());
+    if (!texture) {
+        throw std::runtime_error(std::format("Error loading texture: {}", IMG_GetError()));
+    }
+    return texture;
 }
