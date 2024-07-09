@@ -129,6 +129,30 @@ sdlgz/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdlgz.dir/build.make CMakeFiles/sdlgz.dir/build
 .PHONY : sdlgz/fast
 
+src/DVD.o: src/DVD.cpp.o
+.PHONY : src/DVD.o
+
+# target to build an object file
+src/DVD.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdlgz.dir/build.make CMakeFiles/sdlgz.dir/src/DVD.cpp.o
+.PHONY : src/DVD.cpp.o
+
+src/DVD.i: src/DVD.cpp.i
+.PHONY : src/DVD.i
+
+# target to preprocess a source file
+src/DVD.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdlgz.dir/build.make CMakeFiles/sdlgz.dir/src/DVD.cpp.i
+.PHONY : src/DVD.cpp.i
+
+src/DVD.s: src/DVD.cpp.s
+.PHONY : src/DVD.s
+
+# target to generate assembly for a file
+src/DVD.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdlgz.dir/build.make CMakeFiles/sdlgz.dir/src/DVD.cpp.s
+.PHONY : src/DVD.cpp.s
+
 src/Fonts.o: src/Fonts.cpp.o
 .PHONY : src/Fonts.o
 
@@ -234,6 +258,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... sdlgz"
+	@echo "... src/DVD.o"
+	@echo "... src/DVD.i"
+	@echo "... src/DVD.s"
 	@echo "... src/Fonts.o"
 	@echo "... src/Fonts.i"
 	@echo "... src/Fonts.s"

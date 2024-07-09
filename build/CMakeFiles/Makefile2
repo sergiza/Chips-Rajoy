@@ -81,12 +81,12 @@ clean: CMakeFiles/sdlgz.dir/clean
 CMakeFiles/sdlgz.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdlgz.dir/build.make CMakeFiles/sdlgz.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdlgz.dir/build.make CMakeFiles/sdlgz.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sergiza/Documents/sdlgz/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target sdlgz"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sergiza/Documents/sdlgz/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target sdlgz"
 .PHONY : CMakeFiles/sdlgz.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/sdlgz.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sergiza/Documents/sdlgz/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sergiza/Documents/sdlgz/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/sdlgz.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/sergiza/Documents/sdlgz/build/CMakeFiles 0
 .PHONY : CMakeFiles/sdlgz.dir/rule

@@ -15,15 +15,15 @@ TTF_Font* Fonts::load_font(const std::string& ttf, int font_size) {
     return font;
 }
 
-
-
-SDL_Texture* Fonts::load_font_asTexture(const std::string& file_path, SDL_Renderer* renderer) {
-    SDL_Texture* texture = IMG_LoadTexture(renderer, file_path.c_str());
-    if (!texture) {
-        throw std::runtime_error(std::format("Error loading texture: {}", IMG_GetError()));
+SDL_Surface* Fonts::render_font(const std::string& text_string) {
+    SDL_Surface* surface = TTF_RenderText_Blended(font.get(), text_string.c_str(), font_color);
+    if (!surface) {    // if surface is null
+        auto error = std::format("Error loading text Surface: {}", TTF_GetError());
+        throw std::runtime_error(error);
     }
-    return texture;
+    return surface;
 }
+
 
 void Fonts::init() {
     font.reset(load_font(ttf_default.c_str(), font_size));

@@ -25,6 +25,15 @@ SDL_Renderer* Graphics::get_renderer() {
     return renderer.get();
 }
 
+SDL_Texture* Graphics::texture_from_surface(SDL_Surface* surface) {
+    SDL_Texture* texture = SDL_CreateTextureFromSurface(get_renderer(), surface);
+    if (!texture) {    // if text is null
+        auto error = std::format("Error creating Texture from Surface: {}", SDL_GetError());
+        throw std::runtime_error(error);
+    }
+    return texture;
+}
+
 SDL_Texture* Graphics::load_texture(const std::string& file_path) {
     SDL_Texture* texture = IMG_LoadTexture(renderer.get(), file_path.c_str());
     if (!texture) {

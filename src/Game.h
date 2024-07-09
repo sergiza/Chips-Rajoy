@@ -4,6 +4,8 @@
 #include "Graphics.h"
 #include "Fonts.h"
 
+#include "DVD.h"
+
 #include <SDL2/SDL.h>
 #include <format>
 #include <iostream>
@@ -23,19 +25,14 @@ class Game {
     private:
         Graphics graphics;
         Fonts fonts;
+
         SDL_Event event;
-
-        void update_text();
-
-        std::string text_str;
-        SDL_Rect text_rect;
-        const int text_vel;
-        int text_xvel;
-        int text_yvel;
+        DVD dvd;
 
         std::unique_ptr<SDL_Texture, decltype(&SDL_DestroyTexture)> background;
         std::unique_ptr<SDL_Surface, decltype(&SDL_FreeSurface)> Surface_DVDtext;
-        std::unique_ptr<SDL_Texture, decltype(&SDL_DestroyTexture)> text;
+        std::unique_ptr<SDL_Texture, decltype(&SDL_DestroyTexture)> Texture_DVDtext;
+
 };
 
 #endif

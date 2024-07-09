@@ -19,7 +19,7 @@ class Fonts {
 
         void init();
         TTF_Font* load_font(const std::string& file_path, int font_size);
-        SDL_Texture* load_font_asTexture(const std::string& file_path, SDL_Renderer* renderer);
+        SDL_Surface* render_font(const std::string& text_string);
 
     private:
 };
