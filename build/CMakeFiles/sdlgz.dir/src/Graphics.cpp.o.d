@@ -1,9 +1,8 @@
-CMakeFiles/sdlgz.dir/src/Game.cpp.o: \
- /home/sergiza/Documents/sdlgz/src/Game.cpp /usr/include/stdc-predef.h \
- /home/sergiza/Documents/sdlgz/src/Game.h \
- /home/sergiza/Documents/sdlgz/src/Graphics.h /usr/include/SDL2/SDL.h \
- /usr/include/SDL2/SDL_main.h /usr/include/SDL2/SDL_stdinc.h \
- /usr/include/SDL2/SDL_config.h \
+CMakeFiles/sdlgz.dir/src/Graphics.cpp.o: \
+ /home/sergiza/Documents/sdlgz/src/Graphics.cpp \
+ /usr/include/stdc-predef.h /home/sergiza/Documents/sdlgz/src/Graphics.h \
+ /usr/include/SDL2/SDL.h /usr/include/SDL2/SDL_main.h \
+ /usr/include/SDL2/SDL_stdinc.h /usr/include/SDL2/SDL_config.h \
  /usr/include/x86_64-linux-gnu/SDL2/_real_SDL_config.h \
  /usr/include/SDL2/SDL_platform.h /usr/include/SDL2/begin_code.h \
  /usr/include/SDL2/close_code.h /usr/include/x86_64-linux-gnu/sys/types.h \
@@ -354,6 +353,4 @@ CMakeFiles/sdlgz.dir/src/Game.cpp.o: \
  /usr/include/c++/13/backward/auto_ptr.h \
  /usr/include/c++/13/bits/ranges_uninitialized.h \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
- /usr/include/c++/13/pstl/execution_defs.h /usr/include/SDL2/SDL_ttf.h \
- /usr/include/c++/13/iostream /usr/include/c++/13/istream \
- /usr/include/c++/13/bits/istream.tcc
+ /usr/include/c++/13/pstl/execution_defs.h

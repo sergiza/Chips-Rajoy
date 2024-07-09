@@ -153,6 +153,30 @@ src/Game.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdlgz.dir/build.make CMakeFiles/sdlgz.dir/src/Game.cpp.s
 .PHONY : src/Game.cpp.s
 
+src/Graphics.o: src/Graphics.cpp.o
+.PHONY : src/Graphics.o
+
+# target to build an object file
+src/Graphics.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdlgz.dir/build.make CMakeFiles/sdlgz.dir/src/Graphics.cpp.o
+.PHONY : src/Graphics.cpp.o
+
+src/Graphics.i: src/Graphics.cpp.i
+.PHONY : src/Graphics.i
+
+# target to preprocess a source file
+src/Graphics.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdlgz.dir/build.make CMakeFiles/sdlgz.dir/src/Graphics.cpp.i
+.PHONY : src/Graphics.cpp.i
+
+src/Graphics.s: src/Graphics.cpp.s
+.PHONY : src/Graphics.s
+
+# target to generate assembly for a file
+src/Graphics.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdlgz.dir/build.make CMakeFiles/sdlgz.dir/src/Graphics.cpp.s
+.PHONY : src/Graphics.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -189,6 +213,9 @@ help:
 	@echo "... src/Game.o"
 	@echo "... src/Game.i"
 	@echo "... src/Game.s"
+	@echo "... src/Graphics.o"
+	@echo "... src/Graphics.i"
+	@echo "... src/Graphics.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

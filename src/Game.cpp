@@ -5,32 +5,17 @@ Game::Game()    // constructor
         font_size{80}, font_color{255, 255, 255, 255},
         text_str{"SDL"}, text_rect{0, 0, 0, 0},
         text_vel{3}, text_xvel{3}, text_yvel{3},
-        window{nullptr, SDL_DestroyWindow},
-        renderer{nullptr, SDL_DestroyRenderer},
         background{nullptr, SDL_DestroyTexture},
         font{nullptr, TTF_CloseFont},
         text_surf(nullptr, SDL_FreeSurface),
         text{nullptr, SDL_DestroyTexture} {}
 
 void Game::init() {
-    this->window.reset(
-            SDL_CreateWindow(this->title.c_str(), SDL_WINDOWPOS_CENTERED,
-                SDL_WINDOWPOS_CENTERED, this->width, this->height, 0));
-    if (!this->window) {    // if window is null
-        auto error = std::format("Error creating Window: {}", SDL_GetError());
-        throw std::runtime_error(error);
-    }
-
-    this->renderer.reset(
-            SDL_CreateRenderer(this->window.get(), -1, SDL_RENDERER_ACCELERATED));
-    if (!this->renderer) {    // if renderer is null
-        auto error = std::format("Error creating Renderer: {}", SDL_GetError());
-        throw std::runtime_error(error);
-    }
+    graphics.init(width, height, title);
 }
 
 void Game::load_media() {
-    this->background.reset(IMG_LoadTexture(this->renderer.get(), "rsrc/images/background.png"));
+    this->background.reset(IMG_LoadTexture(graphics.get_renderer(), "rsrc/images/background.png"));
     if (!this->background) {    // if background is null
         auto error = std::format("Error loading texture: {}", IMG_GetError());
         throw std::runtime_error(error);
@@ -51,7 +36,7 @@ void Game::load_media() {
     this->text_rect.w = this->text_surf->w;
     this->text_rect.h = this->text_surf->h;
 
-    this->text.reset(SDL_CreateTextureFromSurface(this->renderer.get(), this->text_surf.get()));
+    this->text.reset(SDL_CreateTextureFromSurface(graphics.get_renderer(), this->text_surf.get()));
     if (!this->text) {    // if text is null
         auto error = std::format("Error creating Texture from Surface: {}", SDL_GetError());
         throw std::runtime_error(error);
@@ -97,14 +82,13 @@ void Game::run() {
 
         this->update_text();
 
-        SDL_RenderClear(this->renderer.get());
+        SDL_RenderClear(graphics.get_renderer());
 
-        SDL_RenderCopy(this->renderer.get(), this->background.get(), nullptr, nullptr);
+        SDL_RenderCopy(graphics.get_renderer(), this->background.get(), nullptr, nullptr);
 
-        SDL_RenderCopy(this->renderer.get(), this->text.get(), nullptr, &this->text_rect);
+        SDL_RenderCopy(graphics.get_renderer(), this->text.get(), nullptr, &this->text_rect);
 
-        SDL_RenderPresent(this->renderer.get());
+        SDL_RenderPresent(graphics.get_renderer());
         SDL_Delay(16); // close to 60 frames/second
     }
 }
-
