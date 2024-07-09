@@ -6,13 +6,12 @@
 class PlayerSprite {
     public:
         PlayerSprite();
-        void update_PlayerSprite(int window_width, int window_height);
+        void update_PlayerSprite(const Uint8 *keystate);
 
         SDL_Rect playerSprite_rectangle;
         int playerSprite_velocity;
 
     private:
 };
-
 
 #endif

@@ -38,6 +38,8 @@ class Game {
 
         std::unique_ptr<SDL_Surface, decltype(&SDL_FreeSurface)> icon;
         std::unique_ptr<SDL_Texture, decltype(&SDL_DestroyTexture)> icon_Texture;
+
+        const Uint8 *keystate;
 };
 
 #endif

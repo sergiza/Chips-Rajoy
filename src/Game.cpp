@@ -6,7 +6,8 @@ Game::Game()    // constructor
       background{nullptr, SDL_DestroyTexture},
       DVDtext_Surface(nullptr, SDL_FreeSurface),
       DVDtext_Texture{nullptr, SDL_DestroyTexture},
-      icon_Texture{nullptr, SDL_DestroyTexture} {}
+      icon_Texture{nullptr, SDL_DestroyTexture},
+      keystate{SDL_GetKeyboardState(nullptr)} {}
 
 void Game::init() {
     graphics.init(window_width, window_height, title);
@@ -52,6 +53,7 @@ void Game::run() {
         }
 
         dvd.update_DVD(window_width, window_height);
+        playerSprite.update_PlayerSprite(keystate);
 
         SDL_RenderClear(graphics.get_renderer());
         SDL_RenderCopy(graphics.get_renderer(), background.get(), nullptr, nullptr);
