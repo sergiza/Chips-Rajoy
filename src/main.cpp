@@ -16,9 +16,21 @@ void initialize_sdl() {
         auto error = std::format("Error initializing SDL_ttf: {}", TTF_GetError());
         throw std::runtime_error(error);
     }
+
+    int mix_flags = MIX_INIT_OGG | MIX_INIT_MP3;
+    if ((Mix_Init(mix_flags) & mix_flags) != mix_flags) {
+        auto error = std::format("Error initializing SDL_mixer: {}", Mix_GetError());
+        throw std::runtime_error(error);
+    }
+    if (Mix_OpenAudio(MIX_DEFAULT_FREQUENCY, MIX_DEFAULT_FORMAT, MIX_DEFAULT_CHANNELS, 1024)) {
+        auto error = std::format("Error Opening Audio: {}", Mix_GetError());
+        throw std::runtime_error(error);
+    }
 }
 
 void close_sdl() {
+    Mix_CloseAudio();
+    Mix_Quit();
     TTF_Quit();
     IMG_Quit();
     SDL_Quit();

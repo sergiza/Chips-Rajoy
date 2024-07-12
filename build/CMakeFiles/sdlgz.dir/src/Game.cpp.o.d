@@ -355,6 +355,7 @@ CMakeFiles/sdlgz.dir/src/Game.cpp.o: \
  /usr/include/c++/13/bits/ranges_uninitialized.h \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h \
+ /home/sergiza/Documents/sdlgz/src/Sound.h /usr/include/SDL2/SDL_mixer.h \
  /home/sergiza/Documents/sdlgz/src/Fonts.h /usr/include/SDL2/SDL_image.h \
  /usr/include/SDL2/SDL_ttf.h /home/sergiza/Documents/sdlgz/src/DVD.h \
  /home/sergiza/Documents/sdlgz/src/PlayerSprite.h \

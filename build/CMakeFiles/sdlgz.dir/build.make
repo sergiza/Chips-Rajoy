@@ -192,6 +192,7 @@ sdlgz: /usr/lib/x86_64-linux-gnu/libSDL2main.a
 sdlgz: /usr/lib/x86_64-linux-gnu/libSDL2.so
 sdlgz: /usr/lib/x86_64-linux-gnu/libSDL2_image.so
 sdlgz: /usr/lib/x86_64-linux-gnu/libSDL2_ttf.so
+sdlgz: /usr/lib/x86_64-linux-gnu/libSDL2_mixer.so
 sdlgz: CMakeFiles/sdlgz.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/sergiza/Documents/sdlgz/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable sdlgz"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sdlgz.dir/link.txt --verbose=$(VERBOSE)
