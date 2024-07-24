@@ -6,8 +6,8 @@ Game::Game()    // constructor
       background{nullptr, SDL_DestroyTexture},
       icon_Texture{nullptr, SDL_DestroyTexture},
       keystate{SDL_GetKeyboardState(nullptr)},
-      pkmn{nullptr, Mix_FreeChunk},
-      LA{nullptr, Mix_FreeMusic} {}
+      sound_pop{nullptr, Mix_FreeChunk},
+      music_bossa{nullptr, Mix_FreeMusic} {}
 
 Game::~Game() { 
     Mix_HaltChannel(-1);
@@ -20,22 +20,20 @@ void Game::init() {
 }
 
 void Game::load_media() {
-    background.reset(graphics.load_texture("rsrc/images/adibu.jpg"));
-
-
-    icon.reset(graphics.load_surface("rsrc/images/Cpp-logo.png"));
+    background.reset(graphics.load_texture("rsrc/images/fondo-pastel_blurry.png"));
+    icon.reset(graphics.load_surface("rsrc/images/cookie-COOKIE.png"));
     SDL_SetWindowIcon(graphics.get_window(), icon.get());
 
     icon_Texture.reset(graphics.texture_from_surface(icon.get()));
 
-    pkmn.reset(sound.load_sound("rsrc/sounds/pkmn.ogg"));
-    LA.reset(sound.load_music("rsrc/music/LA.mp3"));
+    sound_pop.reset(sound.load_sound("rsrc/sounds/pop.ogg"));
+    music_bossa.reset(sound.load_music("rsrc/music/Bossa Antigua.mp3"));
 }
 
 
 void Game::run() {
     SDL_Delay(100);
-    Mix_PlayMusic(LA.get(), -1);
+    Mix_PlayMusic(music_bossa.get(), -1);
 
     while (true) {
         while (SDL_PollEvent(&event)) {
@@ -49,7 +47,7 @@ void Game::run() {
                             return;
                             break;
                         case SDL_SCANCODE_SPACE:
-                            Mix_PlayChannel(-1, pkmn.get(), 0);
+                            Mix_PlayChannel(-1, sound_pop.get(), 0);
                             break;
                         case SDL_SCANCODE_M:
                             if (Mix_PausedMusic())

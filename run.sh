@@ -1,3 +1,3 @@
 #!/bin/bash
-PROJECT_DIR="/home/sergiza/Documents/sdlgz"
-$PROJECT_DIR/build/sdlgz
+PROJECT_DIR="/home/sergiza/Documents/Chips-Rajoy"
+$PROJECT_DIR/build/Chips-Rajoy

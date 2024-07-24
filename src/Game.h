@@ -28,8 +28,8 @@ class Game {
         std::unique_ptr<SDL_Texture, decltype(&SDL_DestroyTexture)> icon_Texture;
 
         Sound sound;
-        std::unique_ptr<Mix_Chunk, decltype(&Mix_FreeChunk)> pkmn;
-        std::unique_ptr<Mix_Music, decltype(&Mix_FreeMusic)> LA;
+        std::unique_ptr<Mix_Chunk, decltype(&Mix_FreeChunk)> sound_pop;
+        std::unique_ptr<Mix_Music, decltype(&Mix_FreeMusic)> music_bossa;
 
         SDL_Event event;
         const Uint8 *keystate;

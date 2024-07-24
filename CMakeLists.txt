@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.14)
-project(sdlgz VERSION 0.1.0)
+project(Chips-Rajoy VERSION 0.1.0)
 
 # cpp20
 set(CMAKE_CXX_STANDARD 20)
@@ -11,5 +11,5 @@ find_package(SDL2_Image REQUIRED)
 find_package(SDL2_ttf REQUIRED)
 find_package(SDL2_mixer REQUIRED)
 
-add_executable(sdlgz src/main.cpp src/Game.cpp src/Graphics.cpp src/Fonts.cpp src/Sound.cpp)
-target_link_libraries(sdlgz SDL2::SDL2main SDL2::SDL2 SDL2_image::SDL2_image SDL2_ttf::SDL2_ttf SDL2_mixer::SDL2_mixer)
+add_executable(Chips-Rajoy src/main.cpp src/Game.cpp src/Graphics.cpp src/Fonts.cpp src/Sound.cpp)
+target_link_libraries(Chips-Rajoy SDL2::SDL2main SDL2::SDL2 SDL2_image::SDL2_image SDL2_ttf::SDL2_ttf SDL2_mixer::SDL2_mixer)
