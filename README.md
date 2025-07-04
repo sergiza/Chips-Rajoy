@@ -1,5 +1,5 @@
 # Chips Rajoy!
-C++ Cookie Clicker game using SDL2 lib
+C++ Cookie Clicker game using SDL2 lib\
 WIP & basically barebones
 
 ## SDL stuff
