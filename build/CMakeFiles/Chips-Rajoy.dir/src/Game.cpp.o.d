@@ -278,7 +278,11 @@ CMakeFiles/Chips-Rajoy.dir/src/Game.cpp.o: \
  /usr/include/c++/14/bits/memory_resource.h /usr/include/c++/14/cstddef \
  /usr/include/c++/14/bits/uses_allocator.h \
  /usr/include/c++/14/bits/uses_allocator_args.h /usr/include/c++/14/tuple \
- /usr/include/c++/14/bits/ranges_util.h \
+ /usr/include/c++/14/bits/ranges_util.h /usr/include/c++/14/vector \
+ /usr/include/c++/14/bits/stl_uninitialized.h \
+ /usr/include/c++/14/bits/stl_vector.h \
+ /usr/include/c++/14/bits/stl_bvector.h \
+ /usr/include/c++/14/bits/vector.tcc \
  /home/sergiza/Documents/CODE/Chips-Rajoy/src/Graphics.h \
  /usr/include/SDL2/SDL_image.h /usr/include/c++/14/unordered_map \
  /usr/include/c++/14/bits/unordered_map.h \
