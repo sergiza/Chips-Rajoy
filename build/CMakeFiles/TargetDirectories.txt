@@ -1,0 +1,3 @@
+/home/sergiza/Documents/CODE/Chips-Rajoy/build/CMakeFiles/Chips-Rajoy.dir
+/home/sergiza/Documents/CODE/Chips-Rajoy/build/CMakeFiles/edit_cache.dir
+/home/sergiza/Documents/CODE/Chips-Rajoy/build/CMakeFiles/rebuild_cache.dir
