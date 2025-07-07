@@ -14,6 +14,12 @@ Game::Game() {
     Audio::Init();
     Font::Init();
 
+    SDL_Surface* icon = IMG_Load(PATH_cookieTexture.c_str());
+    if (icon) {
+        SDL_SetWindowIcon(window, icon);
+        SDL_FreeSurface(icon);
+    }
+
     // assets
     bgTexture = Graphics::LoadTexture(PATH_bgTexture, renderer);
     cookieTexture = Graphics::LoadTexture(PATH_cookieTexture , renderer);
@@ -21,7 +27,6 @@ Game::Game() {
     Audio::PlayMusic(bgm);
     font = TTF_OpenFont(PATH_font.c_str(), 24);
     if (!font) SDL_Log("Error loading font");
-    // upgrades
     upgradeMilkTexture = Graphics::LoadTexture(PATH_upgradeMilk, renderer);
     upgradeRajoyTexture = Graphics::LoadTexture(PATH_upgradeRajoy, renderer);
     upgrades.push_back({"milk", upgradeMilkTexture, {500, 100, 96, 96}, 50});
