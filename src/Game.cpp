@@ -78,10 +78,6 @@ void Game::input() {
                     upg.owned++;
                     Mix_Chunk* chachingSound = Audio::LoadSound(PATH_sound_chaching);
                     Audio::PlaySound(chachingSound);
-
-                    if (upg.name == "rajoy") {
-                        state.multiplier += 0.5f;
-                    }
                 }
             }
 
@@ -102,6 +98,8 @@ void Game::update() {
     for (auto& upg : upgrades) {
         upg.available = (state.score >= upg.cost);
     }
+
+    state.multiplier = 1.0f + upgrades[1].owned * 1.0f;
 
     // AUTOCLICKER
     if (upgrades[0].owned > 0 && now - lastAutoClick > 1000) {
