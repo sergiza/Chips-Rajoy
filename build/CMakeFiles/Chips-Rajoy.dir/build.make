@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sergiza/Documents/CODE/Chips-Rajoy
+CMAKE_SOURCE_DIR = /home/sergiza/Documents/CODE/gamedev/Chips-Rajoy
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sergiza/Documents/CODE/Chips-Rajoy/build
+CMAKE_BINARY_DIR = /home/sergiza/Documents/CODE/gamedev/Chips-Rajoy/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Chips-Rajoy.dir/depend.make
@@ -73,74 +73,74 @@ CMakeFiles/Chips-Rajoy.dir/codegen:
 .PHONY : CMakeFiles/Chips-Rajoy.dir/codegen
 
 CMakeFiles/Chips-Rajoy.dir/src/main.cpp.o: CMakeFiles/Chips-Rajoy.dir/flags.make
-CMakeFiles/Chips-Rajoy.dir/src/main.cpp.o: /home/sergiza/Documents/CODE/Chips-Rajoy/src/main.cpp
+CMakeFiles/Chips-Rajoy.dir/src/main.cpp.o: /home/sergiza/Documents/CODE/gamedev/Chips-Rajoy/src/main.cpp
 CMakeFiles/Chips-Rajoy.dir/src/main.cpp.o: CMakeFiles/Chips-Rajoy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sergiza/Documents/CODE/Chips-Rajoy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Chips-Rajoy.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chips-Rajoy.dir/src/main.cpp.o -MF CMakeFiles/Chips-Rajoy.dir/src/main.cpp.o.d -o CMakeFiles/Chips-Rajoy.dir/src/main.cpp.o -c /home/sergiza/Documents/CODE/Chips-Rajoy/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sergiza/Documents/CODE/gamedev/Chips-Rajoy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Chips-Rajoy.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chips-Rajoy.dir/src/main.cpp.o -MF CMakeFiles/Chips-Rajoy.dir/src/main.cpp.o.d -o CMakeFiles/Chips-Rajoy.dir/src/main.cpp.o -c /home/sergiza/Documents/CODE/gamedev/Chips-Rajoy/src/main.cpp
 
 CMakeFiles/Chips-Rajoy.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Chips-Rajoy.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sergiza/Documents/CODE/Chips-Rajoy/src/main.cpp > CMakeFiles/Chips-Rajoy.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sergiza/Documents/CODE/gamedev/Chips-Rajoy/src/main.cpp > CMakeFiles/Chips-Rajoy.dir/src/main.cpp.i
 
 CMakeFiles/Chips-Rajoy.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Chips-Rajoy.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sergiza/Documents/CODE/Chips-Rajoy/src/main.cpp -o CMakeFiles/Chips-Rajoy.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sergiza/Documents/CODE/gamedev/Chips-Rajoy/src/main.cpp -o CMakeFiles/Chips-Rajoy.dir/src/main.cpp.s
 
 CMakeFiles/Chips-Rajoy.dir/src/Game.cpp.o: CMakeFiles/Chips-Rajoy.dir/flags.make
-CMakeFiles/Chips-Rajoy.dir/src/Game.cpp.o: /home/sergiza/Documents/CODE/Chips-Rajoy/src/Game.cpp
+CMakeFiles/Chips-Rajoy.dir/src/Game.cpp.o: /home/sergiza/Documents/CODE/gamedev/Chips-Rajoy/src/Game.cpp
 CMakeFiles/Chips-Rajoy.dir/src/Game.cpp.o: CMakeFiles/Chips-Rajoy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sergiza/Documents/CODE/Chips-Rajoy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Chips-Rajoy.dir/src/Game.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chips-Rajoy.dir/src/Game.cpp.o -MF CMakeFiles/Chips-Rajoy.dir/src/Game.cpp.o.d -o CMakeFiles/Chips-Rajoy.dir/src/Game.cpp.o -c /home/sergiza/Documents/CODE/Chips-Rajoy/src/Game.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sergiza/Documents/CODE/gamedev/Chips-Rajoy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Chips-Rajoy.dir/src/Game.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chips-Rajoy.dir/src/Game.cpp.o -MF CMakeFiles/Chips-Rajoy.dir/src/Game.cpp.o.d -o CMakeFiles/Chips-Rajoy.dir/src/Game.cpp.o -c /home/sergiza/Documents/CODE/gamedev/Chips-Rajoy/src/Game.cpp
 
 CMakeFiles/Chips-Rajoy.dir/src/Game.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Chips-Rajoy.dir/src/Game.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sergiza/Documents/CODE/Chips-Rajoy/src/Game.cpp > CMakeFiles/Chips-Rajoy.dir/src/Game.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sergiza/Documents/CODE/gamedev/Chips-Rajoy/src/Game.cpp > CMakeFiles/Chips-Rajoy.dir/src/Game.cpp.i
 
 CMakeFiles/Chips-Rajoy.dir/src/Game.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Chips-Rajoy.dir/src/Game.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sergiza/Documents/CODE/Chips-Rajoy/src/Game.cpp -o CMakeFiles/Chips-Rajoy.dir/src/Game.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sergiza/Documents/CODE/gamedev/Chips-Rajoy/src/Game.cpp -o CMakeFiles/Chips-Rajoy.dir/src/Game.cpp.s
 
 CMakeFiles/Chips-Rajoy.dir/src/Graphics.cpp.o: CMakeFiles/Chips-Rajoy.dir/flags.make
-CMakeFiles/Chips-Rajoy.dir/src/Graphics.cpp.o: /home/sergiza/Documents/CODE/Chips-Rajoy/src/Graphics.cpp
+CMakeFiles/Chips-Rajoy.dir/src/Graphics.cpp.o: /home/sergiza/Documents/CODE/gamedev/Chips-Rajoy/src/Graphics.cpp
 CMakeFiles/Chips-Rajoy.dir/src/Graphics.cpp.o: CMakeFiles/Chips-Rajoy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sergiza/Documents/CODE/Chips-Rajoy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Chips-Rajoy.dir/src/Graphics.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chips-Rajoy.dir/src/Graphics.cpp.o -MF CMakeFiles/Chips-Rajoy.dir/src/Graphics.cpp.o.d -o CMakeFiles/Chips-Rajoy.dir/src/Graphics.cpp.o -c /home/sergiza/Documents/CODE/Chips-Rajoy/src/Graphics.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sergiza/Documents/CODE/gamedev/Chips-Rajoy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Chips-Rajoy.dir/src/Graphics.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chips-Rajoy.dir/src/Graphics.cpp.o -MF CMakeFiles/Chips-Rajoy.dir/src/Graphics.cpp.o.d -o CMakeFiles/Chips-Rajoy.dir/src/Graphics.cpp.o -c /home/sergiza/Documents/CODE/gamedev/Chips-Rajoy/src/Graphics.cpp
 
 CMakeFiles/Chips-Rajoy.dir/src/Graphics.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Chips-Rajoy.dir/src/Graphics.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sergiza/Documents/CODE/Chips-Rajoy/src/Graphics.cpp > CMakeFiles/Chips-Rajoy.dir/src/Graphics.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sergiza/Documents/CODE/gamedev/Chips-Rajoy/src/Graphics.cpp > CMakeFiles/Chips-Rajoy.dir/src/Graphics.cpp.i
 
 CMakeFiles/Chips-Rajoy.dir/src/Graphics.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Chips-Rajoy.dir/src/Graphics.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sergiza/Documents/CODE/Chips-Rajoy/src/Graphics.cpp -o CMakeFiles/Chips-Rajoy.dir/src/Graphics.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sergiza/Documents/CODE/gamedev/Chips-Rajoy/src/Graphics.cpp -o CMakeFiles/Chips-Rajoy.dir/src/Graphics.cpp.s
 
 CMakeFiles/Chips-Rajoy.dir/src/Audio.cpp.o: CMakeFiles/Chips-Rajoy.dir/flags.make
-CMakeFiles/Chips-Rajoy.dir/src/Audio.cpp.o: /home/sergiza/Documents/CODE/Chips-Rajoy/src/Audio.cpp
+CMakeFiles/Chips-Rajoy.dir/src/Audio.cpp.o: /home/sergiza/Documents/CODE/gamedev/Chips-Rajoy/src/Audio.cpp
 CMakeFiles/Chips-Rajoy.dir/src/Audio.cpp.o: CMakeFiles/Chips-Rajoy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sergiza/Documents/CODE/Chips-Rajoy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Chips-Rajoy.dir/src/Audio.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chips-Rajoy.dir/src/Audio.cpp.o -MF CMakeFiles/Chips-Rajoy.dir/src/Audio.cpp.o.d -o CMakeFiles/Chips-Rajoy.dir/src/Audio.cpp.o -c /home/sergiza/Documents/CODE/Chips-Rajoy/src/Audio.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sergiza/Documents/CODE/gamedev/Chips-Rajoy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Chips-Rajoy.dir/src/Audio.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chips-Rajoy.dir/src/Audio.cpp.o -MF CMakeFiles/Chips-Rajoy.dir/src/Audio.cpp.o.d -o CMakeFiles/Chips-Rajoy.dir/src/Audio.cpp.o -c /home/sergiza/Documents/CODE/gamedev/Chips-Rajoy/src/Audio.cpp
 
 CMakeFiles/Chips-Rajoy.dir/src/Audio.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Chips-Rajoy.dir/src/Audio.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sergiza/Documents/CODE/Chips-Rajoy/src/Audio.cpp > CMakeFiles/Chips-Rajoy.dir/src/Audio.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sergiza/Documents/CODE/gamedev/Chips-Rajoy/src/Audio.cpp > CMakeFiles/Chips-Rajoy.dir/src/Audio.cpp.i
 
 CMakeFiles/Chips-Rajoy.dir/src/Audio.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Chips-Rajoy.dir/src/Audio.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sergiza/Documents/CODE/Chips-Rajoy/src/Audio.cpp -o CMakeFiles/Chips-Rajoy.dir/src/Audio.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sergiza/Documents/CODE/gamedev/Chips-Rajoy/src/Audio.cpp -o CMakeFiles/Chips-Rajoy.dir/src/Audio.cpp.s
 
 CMakeFiles/Chips-Rajoy.dir/src/Font.cpp.o: CMakeFiles/Chips-Rajoy.dir/flags.make
-CMakeFiles/Chips-Rajoy.dir/src/Font.cpp.o: /home/sergiza/Documents/CODE/Chips-Rajoy/src/Font.cpp
+CMakeFiles/Chips-Rajoy.dir/src/Font.cpp.o: /home/sergiza/Documents/CODE/gamedev/Chips-Rajoy/src/Font.cpp
 CMakeFiles/Chips-Rajoy.dir/src/Font.cpp.o: CMakeFiles/Chips-Rajoy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sergiza/Documents/CODE/Chips-Rajoy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Chips-Rajoy.dir/src/Font.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chips-Rajoy.dir/src/Font.cpp.o -MF CMakeFiles/Chips-Rajoy.dir/src/Font.cpp.o.d -o CMakeFiles/Chips-Rajoy.dir/src/Font.cpp.o -c /home/sergiza/Documents/CODE/Chips-Rajoy/src/Font.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sergiza/Documents/CODE/gamedev/Chips-Rajoy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Chips-Rajoy.dir/src/Font.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Chips-Rajoy.dir/src/Font.cpp.o -MF CMakeFiles/Chips-Rajoy.dir/src/Font.cpp.o.d -o CMakeFiles/Chips-Rajoy.dir/src/Font.cpp.o -c /home/sergiza/Documents/CODE/gamedev/Chips-Rajoy/src/Font.cpp
 
 CMakeFiles/Chips-Rajoy.dir/src/Font.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Chips-Rajoy.dir/src/Font.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sergiza/Documents/CODE/Chips-Rajoy/src/Font.cpp > CMakeFiles/Chips-Rajoy.dir/src/Font.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sergiza/Documents/CODE/gamedev/Chips-Rajoy/src/Font.cpp > CMakeFiles/Chips-Rajoy.dir/src/Font.cpp.i
 
 CMakeFiles/Chips-Rajoy.dir/src/Font.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Chips-Rajoy.dir/src/Font.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sergiza/Documents/CODE/Chips-Rajoy/src/Font.cpp -o CMakeFiles/Chips-Rajoy.dir/src/Font.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sergiza/Documents/CODE/gamedev/Chips-Rajoy/src/Font.cpp -o CMakeFiles/Chips-Rajoy.dir/src/Font.cpp.s
 
 # Object files for target Chips-Rajoy
 Chips__Rajoy_OBJECTS = \
@@ -166,7 +166,7 @@ Chips-Rajoy: /usr/lib/x86_64-linux-gnu/libSDL2_image.so
 Chips-Rajoy: /usr/lib/x86_64-linux-gnu/libSDL2_mixer.so
 Chips-Rajoy: /usr/lib/x86_64-linux-gnu/libSDL2_ttf.so
 Chips-Rajoy: CMakeFiles/Chips-Rajoy.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/sergiza/Documents/CODE/Chips-Rajoy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Chips-Rajoy"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/sergiza/Documents/CODE/gamedev/Chips-Rajoy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Chips-Rajoy"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Chips-Rajoy.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -178,6 +178,6 @@ CMakeFiles/Chips-Rajoy.dir/clean:
 .PHONY : CMakeFiles/Chips-Rajoy.dir/clean
 
 CMakeFiles/Chips-Rajoy.dir/depend:
-	cd /home/sergiza/Documents/CODE/Chips-Rajoy/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sergiza/Documents/CODE/Chips-Rajoy /home/sergiza/Documents/CODE/Chips-Rajoy /home/sergiza/Documents/CODE/Chips-Rajoy/build /home/sergiza/Documents/CODE/Chips-Rajoy/build /home/sergiza/Documents/CODE/Chips-Rajoy/build/CMakeFiles/Chips-Rajoy.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/sergiza/Documents/CODE/gamedev/Chips-Rajoy/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sergiza/Documents/CODE/gamedev/Chips-Rajoy /home/sergiza/Documents/CODE/gamedev/Chips-Rajoy /home/sergiza/Documents/CODE/gamedev/Chips-Rajoy/build /home/sergiza/Documents/CODE/gamedev/Chips-Rajoy/build /home/sergiza/Documents/CODE/gamedev/Chips-Rajoy/build/CMakeFiles/Chips-Rajoy.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/Chips-Rajoy.dir/depend
 

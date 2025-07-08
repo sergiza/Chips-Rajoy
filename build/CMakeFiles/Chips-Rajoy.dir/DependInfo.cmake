@@ -8,11 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/sergiza/Documents/CODE/Chips-Rajoy/src/Audio.cpp" "CMakeFiles/Chips-Rajoy.dir/src/Audio.cpp.o" "gcc" "CMakeFiles/Chips-Rajoy.dir/src/Audio.cpp.o.d"
-  "/home/sergiza/Documents/CODE/Chips-Rajoy/src/Font.cpp" "CMakeFiles/Chips-Rajoy.dir/src/Font.cpp.o" "gcc" "CMakeFiles/Chips-Rajoy.dir/src/Font.cpp.o.d"
-  "/home/sergiza/Documents/CODE/Chips-Rajoy/src/Game.cpp" "CMakeFiles/Chips-Rajoy.dir/src/Game.cpp.o" "gcc" "CMakeFiles/Chips-Rajoy.dir/src/Game.cpp.o.d"
-  "/home/sergiza/Documents/CODE/Chips-Rajoy/src/Graphics.cpp" "CMakeFiles/Chips-Rajoy.dir/src/Graphics.cpp.o" "gcc" "CMakeFiles/Chips-Rajoy.dir/src/Graphics.cpp.o.d"
-  "/home/sergiza/Documents/CODE/Chips-Rajoy/src/main.cpp" "CMakeFiles/Chips-Rajoy.dir/src/main.cpp.o" "gcc" "CMakeFiles/Chips-Rajoy.dir/src/main.cpp.o.d"
+  "/home/sergiza/Documents/CODE/gamedev/Chips-Rajoy/src/Audio.cpp" "CMakeFiles/Chips-Rajoy.dir/src/Audio.cpp.o" "gcc" "CMakeFiles/Chips-Rajoy.dir/src/Audio.cpp.o.d"
+  "/home/sergiza/Documents/CODE/gamedev/Chips-Rajoy/src/Font.cpp" "CMakeFiles/Chips-Rajoy.dir/src/Font.cpp.o" "gcc" "CMakeFiles/Chips-Rajoy.dir/src/Font.cpp.o.d"
+  "/home/sergiza/Documents/CODE/gamedev/Chips-Rajoy/src/Game.cpp" "CMakeFiles/Chips-Rajoy.dir/src/Game.cpp.o" "gcc" "CMakeFiles/Chips-Rajoy.dir/src/Game.cpp.o.d"
+  "/home/sergiza/Documents/CODE/gamedev/Chips-Rajoy/src/Graphics.cpp" "CMakeFiles/Chips-Rajoy.dir/src/Graphics.cpp.o" "gcc" "CMakeFiles/Chips-Rajoy.dir/src/Graphics.cpp.o.d"
+  "/home/sergiza/Documents/CODE/gamedev/Chips-Rajoy/src/main.cpp" "CMakeFiles/Chips-Rajoy.dir/src/main.cpp.o" "gcc" "CMakeFiles/Chips-Rajoy.dir/src/main.cpp.o.d"
   "" "Chips-Rajoy" "gcc" "CMakeFiles/Chips-Rajoy.dir/link.d"
   )
 

@@ -1,3 +1,3 @@
 #!/bin/bash
-PROJECT_DIR="/home/sergiza/Documents/CODE/Chips-Rajoy"
+PROJECT_DIR="$(pwd)"
 $PROJECT_DIR/build/Chips-Rajoy

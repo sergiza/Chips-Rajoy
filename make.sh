@@ -1,6 +1,6 @@
 #!/bin/bash
-PROJECT_DIR="/home/sergiza/Documents/CODE/Chips-Rajoy"
+PROJECT_DIR="$(pwd)"
 cd "$PROJECT_DIR/build"
 
-cmake "$PROJECT_DIR"        # Configurar el proyecto (genera toda la basura de CMake en /build a partir de CMakeLists.txt)
-cmake --build .             # Compilar el proyecto   (utiliza la basura de /build para compilar y generar un ejecutable)
+cmake "$PROJECT_DIR"        # Configure (generate CMake stuff in /build from CMakeLists.txt info)
+cmake --build .             # Compile   (use /build stuff to compile)

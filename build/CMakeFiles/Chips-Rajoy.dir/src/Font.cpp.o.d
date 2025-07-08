@@ -1,7 +1,7 @@
 CMakeFiles/Chips-Rajoy.dir/src/Font.cpp.o: \
- /home/sergiza/Documents/CODE/Chips-Rajoy/src/Font.cpp \
+ /home/sergiza/Documents/CODE/gamedev/Chips-Rajoy/src/Font.cpp \
  /usr/include/stdc-predef.h \
- /home/sergiza/Documents/CODE/Chips-Rajoy/src/Font.h \
+ /home/sergiza/Documents/CODE/gamedev/Chips-Rajoy/src/Font.h \
  /usr/include/SDL2/SDL_ttf.h /usr/include/SDL2/SDL.h \
  /usr/include/SDL2/SDL_main.h /usr/include/SDL2/SDL_stdinc.h \
  /usr/include/SDL2/SDL_config.h \

@@ -1,7 +1,7 @@
 CMakeFiles/Chips-Rajoy.dir/src/Game.cpp.o: \
- /home/sergiza/Documents/CODE/Chips-Rajoy/src/Game.cpp \
+ /home/sergiza/Documents/CODE/gamedev/Chips-Rajoy/src/Game.cpp \
  /usr/include/stdc-predef.h \
- /home/sergiza/Documents/CODE/Chips-Rajoy/src/Game.h \
+ /home/sergiza/Documents/CODE/gamedev/Chips-Rajoy/src/Game.h \
  /usr/include/SDL2/SDL.h /usr/include/SDL2/SDL_main.h \
  /usr/include/SDL2/SDL_stdinc.h /usr/include/SDL2/SDL_config.h \
  /usr/include/x86_64-linux-gnu/SDL2/_real_SDL_config.h \
@@ -283,7 +283,7 @@ CMakeFiles/Chips-Rajoy.dir/src/Game.cpp.o: \
  /usr/include/c++/14/bits/stl_vector.h \
  /usr/include/c++/14/bits/stl_bvector.h \
  /usr/include/c++/14/bits/vector.tcc \
- /home/sergiza/Documents/CODE/Chips-Rajoy/src/Graphics.h \
+ /home/sergiza/Documents/CODE/gamedev/Chips-Rajoy/src/Graphics.h \
  /usr/include/SDL2/SDL_image.h /usr/include/c++/14/unordered_map \
  /usr/include/c++/14/bits/unordered_map.h \
  /usr/include/c++/14/bits/hashtable.h \
@@ -292,6 +292,6 @@ CMakeFiles/Chips-Rajoy.dir/src/Game.cpp.o: \
  /usr/include/c++/14/bits/enable_special_members.h \
  /usr/include/c++/14/bits/node_handle.h \
  /usr/include/c++/14/bits/erase_if.h \
- /home/sergiza/Documents/CODE/Chips-Rajoy/src/Audio.h \
+ /home/sergiza/Documents/CODE/gamedev/Chips-Rajoy/src/Audio.h \
  /usr/include/SDL2/SDL_mixer.h \
- /home/sergiza/Documents/CODE/Chips-Rajoy/src/Font.h
+ /home/sergiza/Documents/CODE/gamedev/Chips-Rajoy/src/Font.h

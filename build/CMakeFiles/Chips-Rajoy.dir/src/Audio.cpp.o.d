@@ -1,7 +1,7 @@
 CMakeFiles/Chips-Rajoy.dir/src/Audio.cpp.o: \
- /home/sergiza/Documents/CODE/Chips-Rajoy/src/Audio.cpp \
+ /home/sergiza/Documents/CODE/gamedev/Chips-Rajoy/src/Audio.cpp \
  /usr/include/stdc-predef.h \
- /home/sergiza/Documents/CODE/Chips-Rajoy/src/Audio.h \
+ /home/sergiza/Documents/CODE/gamedev/Chips-Rajoy/src/Audio.h \
  /usr/include/SDL2/SDL_mixer.h /usr/include/SDL2/SDL_stdinc.h \
  /usr/include/SDL2/SDL_config.h \
  /usr/include/x86_64-linux-gnu/SDL2/_real_SDL_config.h \
