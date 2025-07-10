@@ -1,7 +1,6 @@
-./compile_commands.json
-./build/CMakeFiles
-./build/CMakeFiles/*
-./build/Makefile
-./build/CMakeCache.txt
-./build/cmake_install.cmake
-./build/compile_commands.json
+compile_commands.json
+build/CMakeFiles/
+build/Makefile
+build/CMakeCache.txt
+build/cmake_install.cmake
+build/compile_commands.json
