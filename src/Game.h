@@ -40,7 +40,7 @@ private:
 
     // ASSETS
     // images
-    SDL_Rect rect = {100, 100, 100, 100};
+    SDL_Rect rect = {100, 100, 130, 130};
     SDL_Texture* cookieTexture = nullptr;
     std::string PATH_cookieTexture = "rsrc/images/cookie-COOKIE.png";
     SDL_Texture* bgTexture = nullptr;

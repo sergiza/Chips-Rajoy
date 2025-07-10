@@ -29,8 +29,8 @@ Game::Game() {
     if (!font) SDL_Log("Error loading font");
     upgradeMilkTexture = Graphics::LoadTexture(PATH_upgradeMilk, renderer);
     upgradeRajoyTexture = Graphics::LoadTexture(PATH_upgradeRajoy, renderer);
-    upgrades.push_back({"milk", upgradeMilkTexture, {500, 100, 96, 96}, 50});
-    upgrades.push_back({"rajoy", upgradeRajoyTexture, {500, 220, 96, 96}, 100});
+    upgrades.push_back({"milk", upgradeMilkTexture, {470, 100, 96, 96}, 50});
+    upgrades.push_back({"rajoy", upgradeRajoyTexture, {470, 220, 96, 96}, 100});
 }
 
 Game::~Game() {
